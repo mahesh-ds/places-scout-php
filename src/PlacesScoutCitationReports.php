@@ -54,6 +54,7 @@ class PlacesScoutCitationReports extends AbstractReports
     }
 
     /**
+     * @param $reportId
      * @return mixed
      */
     public function getLostCitations($reportId)
@@ -62,6 +63,7 @@ class PlacesScoutCitationReports extends AbstractReports
     }
 
     /**
+     * @param $reportId
      * @return mixed
      */
     public function getNewCitations($reportId)
@@ -70,6 +72,7 @@ class PlacesScoutCitationReports extends AbstractReports
     }
 
     /**
+     * @param $reportId
      * @return mixed
      */
     public function getPagedCitations($reportId)
