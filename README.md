@@ -1,3 +1,12 @@
+# Places Scout PHP 
+
+The Places Scout API is a highly scalable SAAS platform based on the popular Service Stack open source solution for 
+high performance REST web services, and can deliver a wide range of valuable SEO data for enterprise level clients.
+
+This is a PHP client for Places Scout's API at [documentation](https://apihost1.placesscout.com/documentation/index.html)
+
+## License 
+
 The MIT License (MIT)
 Copyright (c) 2016 Kevin Em
 
