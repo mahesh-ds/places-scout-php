@@ -1,0 +1,14 @@
+{
+    "name": "kevinem/places-scout-php",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Em",
+            "email": "kevinem@thinkdevise.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
