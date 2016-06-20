@@ -3,6 +3,13 @@
 The Places Scout API is a highly scalable SAAS platform based on the popular Service Stack open source solution for 
 high performance REST web services, and can deliver a wide range of valuable SEO data for enterprise level clients.
 
+## Install
+
+You can pull in the package via composer:
+``` bash
+$ composer require kevinem/places-scout-php
+```
+
 ## Documentation
 
 [documentation](https://apihost1.placesscout.com/documentation/index.html)
