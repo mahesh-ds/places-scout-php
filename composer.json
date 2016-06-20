@@ -1,14 +1,24 @@
 {
-    "name": "kevinem/places-scout-php",
-    "require": {
-        "guzzlehttp/guzzle": "^6.2"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Kevin Em",
-            "email": "kevinem@thinkdevise.com"
-        }
-    ],
-    "minimum-stability": "stable"
+  "name": "kevinem/places-scout-php",
+  "description": "PHP client for Places Scout's API",
+  "keywords": [
+    "seo"
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.2",
+    "php": "^5.6"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kevin Em",
+      "email": "kevinem@thinkdevise.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-0": {
+      "PlacesScoutPHP": "src/"
+    }
+  }
 }
