@@ -14,6 +14,38 @@ $ composer require kevinem/places-scout-php
 
 [documentation](https://apihost1.placesscout.com/documentation/index.html)
 
+## Example Usage
+
+``` php
+
+//Create client with credentials
+$placesScout = new PlacesScout([
+    'username' => '',
+    'password' => ''
+]);
+
+//You can build requests directly 
+$clients = $placesScout->get('/clients');
+
+$client = $placesScout->post('/clients', [
+    //Some data
+]);
+
+$rankingReport = $placesScout->put("/rankingreports/1", [
+    //Some data
+]);
+
+//Or use helper classes to build request
+$clients = new PlacesScoutClients($placesScout);
+$response = $clients->lists();
+
+$rankingReport = new PlacesScoutRankingReports($placesScout);
+$rankingReport->update('1', [
+    //Some data
+]);
+
+```
+
 ## License 
 
 The MIT License (MIT)
