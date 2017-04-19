@@ -55,13 +55,13 @@ class PlacesScout
 
     /**
      * @param $uri
-     * @param array $query
+     * @param array $options
      * @return mixed
      */
-    public function get($uri, array $query = [])
+    public function get($uri, array $options = [])
     {
         return $this->client
-            ->getAsync($uri, ['query' => $query])
+            ->getAsync($uri, $options)
             ->then(function (ResponseInterface $res) {
                 return json_decode((string)$res->getBody());
             }, function (RequestException $e) {
@@ -72,13 +72,13 @@ class PlacesScout
 
     /**
      * @param $uri
-     * @param $data
+     * @param $options
      * @return mixed
      */
-    public function post($uri, array $data = [])
+    public function post($uri, array $options = [])
     {
         return $this->client
-            ->postAsync($uri, ['form_params' => $data])
+            ->postAsync($uri, $options)
             ->then(function (ResponseInterface $res) {
                 return json_decode((string)$res->getBody());
             }, function (RequestException $e) {
@@ -89,13 +89,13 @@ class PlacesScout
 
     /**
      * @param $uri
-     * @param $data
+     * @param $options
      * @return mixed
      */
-    public function put($uri, array $data = [])
+    public function put($uri, array $options = [])
     {
         return $this->client
-            ->putAsync($uri, ['form_params' => $data])
+            ->putAsync($uri, $options)
             ->then(function (ResponseInterface $res) {
                 return json_decode((string)$res->getBody());
             }, function (RequestException $e) {
@@ -106,13 +106,13 @@ class PlacesScout
 
     /**
      * @param $uri
-     * @param array $data
+     * @param array $options
      * @return mixed
      */
-    public function delete($uri, array $data = [])
+    public function delete($uri, array $options = [])
     {
         return $this->client
-            ->deleteAsync($uri, ['form_params' => $data])
+            ->deleteAsync($uri, $options)
             ->then(function (ResponseInterface $res) {
                 return json_decode((string)$res->getBody());
             }, function (RequestException $e) {

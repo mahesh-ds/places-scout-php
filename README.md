@@ -31,7 +31,9 @@ $placesScout = new PlacesScout([
 $clients = $placesScout->get('/clients');
 
 $client = $placesScout->post('/clients', [
-    //Some data
+    'json' => [
+        //Some data
+    ]
 ]);
 
 $rankingReport = $placesScout->put("/rankingreports/1", [
@@ -40,11 +42,18 @@ $rankingReport = $placesScout->put("/rankingreports/1", [
 
 //Or use helper classes to build request
 $clients = new PlacesScoutClients($placesScout);
-$response = $clients->lists();
+$response = $clients->lists([
+    'query' => [
+        'page' => 1,
+        'size' => 10
+    ]
+]);
 
 $rankingReport = new PlacesScoutRankingReports($placesScout);
 $rankingReport->update('1', [
-    //Some data
+    'json' => [
+        //Some data
+    ]
 ]);
 
 ```
