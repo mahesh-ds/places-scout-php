@@ -5,8 +5,8 @@
     "seo"
   ],
   "require": {
-    "guzzlehttp/guzzle": "^6.2",
-    "php": "^7"
+    "guzzlehttp/guzzle": "^7.0",
+    "php": "^8.1"
   },
   "license": "MIT",
   "authors": [
