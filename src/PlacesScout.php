@@ -32,7 +32,7 @@ class PlacesScout
     /**
      * @var string
      */
-    protected $baseUri = 'https://apihost1.placesscout.com';
+    protected $baseUri = 'https://apihost2.placesscout.com';
 
     /**
      * PlacesScoutPHP constructor.
