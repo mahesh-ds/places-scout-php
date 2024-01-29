@@ -81,7 +81,14 @@ class PlacesScoutReputationReports extends AbstractReports
     {
         return $this->placesScout->post("$this->baseUri/reviews/bulk", $data);
     }
-
+    /**
+     * @param array $data
+     * @return mixed
+     */
+    public function getReviewsByRunId($reportId, $reportRunId, array $query = [])
+    {
+        return $this->placesScout->get("$this->baseUri/$reportId/runs/$reportRunId/reviewsandrun", $query);
+    }
     /**
      * @param array $data
      * @return mixed
